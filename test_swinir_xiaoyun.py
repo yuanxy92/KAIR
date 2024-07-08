@@ -25,7 +25,7 @@ def main():
                                     'Images are NOT tested patch by patch.')
     parser.add_argument('--large_model', action='store_true', help='use large model, only provided for real image sr')
     parser.add_argument('--model_path', type=str,
-                        default='/home/xiaoyun/Code/KAIR/superresolution_xiaoyun/swinir_sr_lightweight_x2/models/260000_G.pth')
+                        default='/home/luvision/project/KAIR/superresolution_xiaoyun_lbas/swinir_sr_lightweight_x2/models/225000_G.pth')
     parser.add_argument('--folder_lq', type=str, default=None, help='input low-quality test image folder')
     parser.add_argument('--folder_gt', type=str, default=None, help='input ground-truth test image folder')
     parser.add_argument('--tile', type=int, default=None, help='Tile size, None for no tile during testing (testing as a whole)')
@@ -192,7 +192,7 @@ def define_model(args):
 def setup(args):
     # 001 classical image sr/ 002 lightweight image sr
     if args.task in ['classical_sr', 'lightweight_sr']:
-        save_dir = f'/data/xiaoyun/swinIR_results/test_denoise/swinir_{args.task}_x{args.scale}'
+        save_dir = f'./results/swinIR_results/swinir_{args.task}_x{args.scale}'
         # folder = args.folder_gt
         folder = args.folder_lq
         border = args.scale

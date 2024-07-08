@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["WORLD_SIZE"] = "1"
 import os.path
 import math
@@ -120,7 +120,7 @@ def main(json_path='options/train_msrresnet_psnr.json'):
         if phase == 'train':
             data_set = define_Dataset(dataset_opt)
             generator = torch.Generator().manual_seed(25)
-            train_set, test_set = random_split(data_set, [20000, 10001], generator=generator)
+            train_set, test_set = random_split(data_set, [1200, 134], generator=generator)
             train_size = int(math.ceil(len(train_set) / dataset_opt['dataloader_batch_size']))
             if opt['rank'] == 0:
                 logger.info('Number of train images: {:,d}, iters: {:,d}'.format(len(train_set), train_size))
