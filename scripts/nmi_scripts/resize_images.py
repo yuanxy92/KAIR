@@ -2,8 +2,8 @@ import os
 from PIL import Image
 
 # 输入和输出文件夹路径
-input_folder = '/data/hdd/Data/GCI/Final/data/val/micro/lr'    # 替换为你的输入文件夹路径
-output_folder = '/data/hdd/Data/GCI/Final/data/val/micro/lr128'  # 替换为你的输出文件夹路径
+input_folder = '/data/hdd/Data/GCI/Final/data/test/micro/lr'    # 替换为你的输入文件夹路径
+output_folder = '/data/hdd/Data/GCI/Final/data/test/micro/lr128'  # 替换为你的输出文件夹路径
 
 # 创建输出文件夹（如果不存在）
 os.makedirs(output_folder, exist_ok=True)
