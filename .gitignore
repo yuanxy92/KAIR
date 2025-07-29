@@ -3,3 +3,11 @@
 /utils/__pycache__
 /models/__pycache__
 options.zip
+data/
+models/
+results/
+superresolution_classic_xiaoyun_lbas/
+superresolution_xiaoyun/
+superresolution_xiaoyun_lbas/
+
+*.pyc
