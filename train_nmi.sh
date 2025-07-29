@@ -1,5 +1,3 @@
-# python main_test_swinir.py --task classical_sr --scale 4 --training_patch_size 64 --model_path /home/bml/storage/mnt/v-7c231cc5f5054b0a/org/data/NMI/SwinIR/swinir_NMI_x4_psnr_v2/models/20000_G.pth --folder_lq /home/bml/storage/mnt/v-7c231cc5f5054b0a/org/data/NMI/train/100/micro/lr128 --folder_gt /home/bml/storage/mnt/v-7c231cc5f5054b0a/org/data/NMI/train/100/micro/gt --savedir /home/bml/storage/mnt/v-7c231cc5f5054b0a/org/data/NMI/SwinIR/swinir_NMI_x4_psnr_v2/sr_results_train100_iter_20000
-python main_test_swinir.py --task classical_sr --scale 4 --training_patch_size 64 --model_path /home/bml/storage/mnt/v-7c231cc5f5054b0a/org/data/NMI/SwinIR/swinir_NMI_x4_psnr_v2/models/10000_G.pth --folder_lq /home/bml/storage/mnt/v-7c231cc5f5054b0a/org/data/NMI/test/test/micro/lr128 --folder_gt /home/bml/storage/mnt/v-7c231cc5f5054b0a/org/data/NMI/test/test/micro/gt --savedir /home/bml/storage/mnt/v-7c231cc5f5054b0a/org/data/NMI/SwinIR/swinir_NMI_x4_psnr_v2/sr_results_train100_iter_10000
-# python main_train_psnr_nmi.py --opt options/swinir/train_swinir_sr_realworld_x4_psnr_nmi_512.json
+python main_train_psnr_nmi.py --opt ./options2/swinir/train_swinir_sr_realworld_x4_psnr_nmi_512_pseudo.json
 
 
