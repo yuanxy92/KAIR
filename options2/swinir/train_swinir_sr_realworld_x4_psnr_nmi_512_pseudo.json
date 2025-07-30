@@ -9,8 +9,8 @@
 
   , "path": {
     "root": "/home/xiaoyun/Code/RefCode/KAIR/model_zoo/model_w_pseudo/"            // "denoising" | "superresolution" | "dejpeg"
-    , "pretrained_netG": "/home/xiaoyun/Code/RefCode/KAIR/model_zoo/model_w_pseudo/netG"      // path of pretrained model
-    , "pretrained_netE": "/home/xiaoyun/Code/RefCode/KAIR/model_zoo/model_w_pseudo/netE"      // path of pretrained model
+    , "pretrained_netG": "/home/xiaoyun/Code/RefCode/KAIR/model_zoo/model_w_pseudo/swinir_NMI_x4_psnr_pseudo/models/120000_G.pth"      // path of pretrained model
+    , "pretrained_netE": "/home/xiaoyun/Code/RefCode/KAIR/model_zoo/model_w_pseudo/swinir_NMI_x4_psnr_pseudo/models/120000_E.pth"      // path of pretrained model
   }
 
   , "datasets": {
@@ -68,13 +68,13 @@
     , "E_decay": 0.999                  // Exponential Moving Average for netG: set 0 to disable; default setting 0.999
 
     , "G_optimizer_type": "adam"        // fixed, adam is enough
-    , "G_optimizer_lr": 2e-4            // learning rate
+    , "G_optimizer_lr": 2.0e-5            // learning rate
     , "G_optimizer_wd": 0               // weight decay, default 0
     , "G_optimizer_clipgrad": null      // unused
     , "G_optimizer_reuse": true         //
 
     , "G_scheduler_type": "MultiStepLR" // "MultiStepLR" is enough
-    , "G_scheduler_milestones": [500000, 800000, 900000, 950000, 1000000]
+    , "G_scheduler_milestones": [50000, 80000, 110000, 140000, 2000000]
     , "G_scheduler_gamma": 0.5
 
     , "G_regularizer_orthstep": null    // unused
