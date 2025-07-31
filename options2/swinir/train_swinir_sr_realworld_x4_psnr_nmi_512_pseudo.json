@@ -74,7 +74,7 @@
     , "G_optimizer_reuse": true         //
 
     , "G_scheduler_type": "MultiStepLR" // "MultiStepLR" is enough
-    , "G_scheduler_milestones": [50000, 80000, 110000, 140000, 2000000]
+    , "G_scheduler_milestones": [50000, 120000, 150000, 200000, 250000]
     , "G_scheduler_gamma": 0.5
 
     , "G_regularizer_orthstep": null    // unused
